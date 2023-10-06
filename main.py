@@ -11,7 +11,6 @@ main_heading = Label(text="Enter Miles:")
 main_heading.grid(column=0, row=0)
 
 def button_clicked():
-    global km_value
     get_value = float(input_text.get())
     result = get_value * 1.609
     km_value.config(text=f"{result}")
